@@ -25,10 +25,10 @@ html(lang='en')
     body#page-top
 
         // Navigation
-        nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-secondary.fixed-top
+        nav#sideNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
             a.navbar-brand.js-scroll-trigger(href='#page-top')
-                span.d-block.d-lg-none William Santana
-                span.d-none.d-lg-block
+                span.d-block.d-lg-none William Santana 
+                span.d-none.d-lg-block 
                     img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.jpg', alt='...')
             button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                 span.navbar-toggler-icon
@@ -44,7 +44,7 @@ html(lang='en')
                         a.nav-link.js-scroll-trigger(href='#skills') Habilidades
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#interests') Interesses
-                    li.nav-item
+                    //li.nav-item
                         a.nav-link.js-scroll-trigger(href='#awards') Premios & Certificações
 
         // Page Content
@@ -68,11 +68,11 @@ html(lang='en')
                         | ... e apaxinado pela vida.
 
                     .social-icons
-                        a.social-icon(href='https://www.linkedin.com/in/wdiegoit/')
+                        a.social-icon(href='https://www.linkedin.com/in/wdiegoit/' target="_blank")
                             i.fab.fa-linkedin-in
-                        a.social-icon(href='https://github.com/willdjames')
+                        a.social-icon(href='https://github.com/willdjames' target="_blank")
                             i.fab.fa-github
-                        a.social-icon(href='https://twitter.com/WilliamDiCampos')
+                        a.social-icon(href='https://twitter.com/WilliamDiCampos' target="_blank")
                             i.fab.fa-twitter
 
             hr.m-0
@@ -112,27 +112,23 @@ html(lang='en')
                 .resume-section-content
                     h2.mb-5 Habilidades
                     .subheading.mb-3 Linguagens de Programação & Ferramentas
-                    ul.list-inline.dev-icons
-                        li.list-inline-item
-                            i.fas.fa-database
-                        li.list-inline-item
-                            i.fab.fa-java
-                        li.list-inline-item
-                            i.fab.fa-python
-                        li.list-inline-item
-                            i.fab.fa-angular
-                        li.list-inline-item
-                            i.fab.fa-bootstrap
-                        li.list-inline-item
-                            i.fab.fa-node-js
-                        li.list-inline-item
-                            i.fab.fa-js-square
-                        li.list-inline-item
-                            i.fab.fa-docker
-                        li.list-inline-item
-                            i.fab.fa-git-alt
-                        li.list-inline-item
+                    ul.list-inline.dev-icons.mb-3
+                        li.list-inline-item(data-toggle="tooltip" data-placement="bottom" title="Linux")
                             i.fab.fa-linux
+                        li.list-inline-item(data-toggle="tooltip" data-placement="bottom" title="Kubernetes")
+                            i.fa-solid.fa-dharmachakra
+                        li.list-inline-item(data-toggle="tooltip" data-placement="bottom" title="Docker")
+                            i.fab.fa-docker
+                        li.list-inline-item(data-toggle="tooltip" data-placement="bottom" title="Java")
+                            i.fab.fa-java
+                        li.list-inline-item(data-toggle="tooltip" data-placement="bottom" title="Python")
+                            i.fab.fa-python
+                        li.list-inline-item(data-toggle="tooltip" data-placement="bottom" title="Javascript")
+                            i.fab.fa-js-square
+                        li.list-inline-item(data-toggle="tooltip" data-placement="bottom" title="Banco de Dados")
+                            i.fas.fa-database
+                        li.list-inline-item(data-toggle="tooltip" data-placement="bottom" title="Git")
+                            i.fab.fa-git-alt
                     .subheading.mb-3 Workflow
                     ul.fa-ul.mb-0
                         li

@@ -17,6 +17,8 @@
             outline-color: lighten($primary, 15%);
         }
     }
+
+    background-color: #e00;
 }
 
 @include media-breakpoint-up(lg) {
@@ -71,3 +73,4 @@
         }
     }
 }
+
